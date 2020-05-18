@@ -74,8 +74,9 @@ namespace RandomPractice1
                 
             } while (p1total_test != p2total_test);
 
+            textBox1.Text += Environment.NewLine;
             textBox1.Text += "Test: " + Environment.NewLine;
-            textBox1.Text += "A tie has been reached: " + p2total_test.ToString() + " -and- " + p2total_test.ToString() + Environment.NewLine;
+            textBox1.Text += "A tie has been reached: " + p2total_test.ToString() + " ...and... " + p2total_test.ToString() + Environment.NewLine;
             textBox1.Text += "It took " + test_counter.ToString() + " times";
         }
 
@@ -102,6 +103,44 @@ namespace RandomPractice1
                 textBox1.Text += "INDEX " + i.ToString() + " Occurance: " +  values[i].ToString();
                 textBox1.Text += Environment.NewLine;
             }
+        }
+
+        private void btn_8_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            Random rdm3 = new Random();
+            int grandTotal = 0;
+            int costToPlay = 8;
+            int di1 = 0;
+            int di2 = 0;
+
+            for (int i = 0; i < 999; i++)
+            {
+                di1 = rdm3.Next(1, 7);
+                di2 = rdm3.Next(1, 7);
+                grandTotal += di1 + costToPlay;
+                grandTotal += di2;
+            }
+            textBox1.Text = "Total Winnings: " + grandTotal.ToString("c");
+        }
+
+        private void btn_15_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            Random rdm4 = new Random();
+            int grandTotal2 = 0;
+            int costToPlay = 15;
+            int di1 = 0;
+            int di2 = 0;
+
+            for (int i = 0; i < 999; i++)
+            {
+                di1 = rdm4.Next(1, 7);
+                di2 = rdm4.Next(1, 7);
+                grandTotal2 += di1 + costToPlay;
+                grandTotal2 += di2;
+            }
+            textBox1.Text = "Total Winnings: " + grandTotal2.ToString("c");
         }
     }
 }

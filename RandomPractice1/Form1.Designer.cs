@@ -76,6 +76,7 @@
             this.btn_8.TabIndex = 3;
             this.btn_8.Text = "$8 Game";
             this.btn_8.UseVisualStyleBackColor = true;
+            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
             // 
             // btn_15
             // 
@@ -85,6 +86,7 @@
             this.btn_15.TabIndex = 4;
             this.btn_15.Text = "$15 Game";
             this.btn_15.UseVisualStyleBackColor = true;
+            this.btn_15.Click += new System.EventHandler(this.btn_15_Click);
             // 
             // groupBox1
             // 
