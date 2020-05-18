@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_p1 = new System.Windows.Forms.Button();
             this.btn_rdm_occur = new System.Windows.Forms.Button();
             this.btn_8 = new System.Windows.Forms.Button();
             this.btn_15 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_p1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -44,8 +44,19 @@
             this.textBox1.Location = new System.Drawing.Point(37, 32);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 385);
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(312, 385);
             this.textBox1.TabIndex = 0;
+            // 
+            // btn_p1
+            // 
+            this.btn_p1.Location = new System.Drawing.Point(0, 19);
+            this.btn_p1.Name = "btn_p1";
+            this.btn_p1.Size = new System.Drawing.Size(290, 56);
+            this.btn_p1.TabIndex = 1;
+            this.btn_p1.Text = "Play";
+            this.btn_p1.UseVisualStyleBackColor = true;
+            this.btn_p1.Click += new System.EventHandler(this.btn_p1_Click);
             // 
             // btn_rdm_occur
             // 
@@ -55,6 +66,7 @@
             this.btn_rdm_occur.TabIndex = 2;
             this.btn_rdm_occur.Text = "Occurances of the number of 47 in Random 1-100 ";
             this.btn_rdm_occur.UseVisualStyleBackColor = true;
+            this.btn_rdm_occur.Click += new System.EventHandler(this.btn_rdm_occur_Click);
             // 
             // btn_8
             // 
@@ -85,49 +97,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gambling Game";
             // 
-            // btn_p1
+            // groupBox2
             // 
-            this.btn_p1.Location = new System.Drawing.Point(443, 56);
-            this.btn_p1.Name = "btn_p1";
-            this.btn_p1.Size = new System.Drawing.Size(290, 56);
-            this.btn_p1.TabIndex = 1;
-            this.btn_p1.Text = "Player 1";
-            this.btn_p1.UseVisualStyleBackColor = true;
-            this.btn_p1.Click += new System.EventHandler(this.btn_p1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(443, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Random Battle";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(443, 144);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Gambling Game";
+            this.groupBox2.Controls.Add(this.btn_p1);
+            this.groupBox2.Location = new System.Drawing.Point(443, 32);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(290, 90);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Random Number Battle";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_p1);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_rdm_occur);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,13 +129,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_p1;
         private System.Windows.Forms.Button btn_rdm_occur;
         private System.Windows.Forms.Button btn_8;
         private System.Windows.Forms.Button btn_15;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_p1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

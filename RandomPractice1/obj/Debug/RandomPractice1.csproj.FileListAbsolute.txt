@@ -1,0 +1,10 @@
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\bin\Debug\RandomPractice1.exe.config
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\bin\Debug\RandomPractice1.exe
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\bin\Debug\RandomPractice1.pdb
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.Form1.resources
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.Properties.Resources.resources
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.csproj.GenerateResource.cache
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.csproj.CoreCompileInputs.cache
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.exe
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.pdb
+C:\Users\gamef\source\repos\RandomPractice1\RandomPractice1\obj\Debug\RandomPractice1.csprojAssemblyReference.cache
